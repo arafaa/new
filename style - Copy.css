@@ -1,0 +1,232 @@
+        body{
+           direction: rtl;
+            
+         } 
+       
+        header{
+            background-color: #333333; 
+            width: 100%;
+            height: 75px;
+            
+        }
+        header div{
+            position: relative;
+            display: inline;
+        }
+        .search{
+            padding: 10px;
+            float: left;
+            text-align: left;
+            position: absolute;
+            max-width: 350px;
+            margin-left: auto;
+                
+            
+        }
+        .logo {
+            
+            float: right;
+            padding: 10px;
+            min-width: 270px;
+        }
+        .logo-img{
+            height: 50px;
+            border: 20px;
+            border-bottom-color: red;
+            
+                }
+        .section{
+            padding-right: 170px;
+            padding-top: 25px;            
+        }
+.section h1{
+            padding: 5px;
+            border-right: 6px solid ;
+            border-color: #2196F3;
+            background-color: #dff;
+            max-width: 100px;
+            text-align: center;
+        }
+.contet-section {
+          background-color: #f7f7f7;  
+        }
+.movie{
+            display: inline-block;
+            padding: 10px;
+            max-width: 250px;
+            text-align: center;
+            
+        }
+.movie img{
+   max-width: 150px;
+            
+        }
+
+menu{
+    display: block;
+    position: fixed;
+    text-align: right;
+    width: 60px;
+    height: 400px;
+    background: #f7f7f7;
+    right: -6px;
+    border-radius: 20px;
+    padding-top: 20px;
+        
+    
+    
+}
+menu a{
+    text-align: right;
+    display: block;
+    font-size:15px;
+    padding-bottom: 20px;
+    color: #5f5f5f;
+    text-decoration: none;
+
+}
+menu i {
+    
+    font-size: 35px;
+}
+menu i:hover{
+    color: red;
+    
+}
+
+    
+@media (max-width:700px){
+    header{
+         height: 125px;
+    }
+    header div {
+        display: block;
+        text-align: center;
+    }
+    .logo {
+        float: right;
+        max-width: 100px;
+    }
+
+    .search{
+            padding: 10px;
+            float: right;
+            text-align: right;
+            position: relative;
+            max-width: 150px;
+            margin-left: auto;
+    }
+    menu{
+    border: 1px solid #868686;
+    border-radius: 2px;
+    padding-top: 5px;
+    width: 100%;
+    height: 75px;
+    bottom: -15px;
+    display: flex;
+  justify-content: center; 
+         
+}
+    menu a{
+    margin-right: 20px;
+    display:  flex;
+    flex-direction: column;
+        text-align: center;
+         
+        
+    }
+    menu i {
+        display: flex;
+        max-width: 30px;
+        padding: 10px;
+}
+    .section{
+        padding: 10px;
+    }
+}
+
+
+   #hbz-searchbox {
+        position: absolute;
+        height: 35px;
+        margin: 10px auto;
+        min-width: 350px;
+        max-width: 450px;
+    }
+   
+    .hbz-buttonwrap {
+        border: none;
+        width: 14%;
+        height: 35px;
+        display: block;
+        position: absolute;
+        top: 0;
+        right: 0;
+        background: #444;
+        cursor: pointer;
+        border-top-right-radius: 5px;
+        border-bottom-right-radius: 5px;
+    }
+   
+    .hbz-buttonwrap:hover {
+        background: #1a1a1a;
+    }
+   
+    .hbz-submit {
+        width: 35px;
+        height: 35px;
+        background: transparent;
+        cursor: pointer;
+        position: absolute;
+        right: 50%;
+        top: 50%;
+        margin-top: -17.5px;
+        margin-right: -17.5px;
+        border: none;
+    }
+   
+    .hbz-submit:after {
+        content: '';
+        position: absolute;
+        width: 8px;
+        height: 8px;
+        border: 2px solid white;
+        border-radius: 50%;
+        left: 10px;
+        top: 9px;
+        box-sizing: content-box;
+    }
+   
+    .hbz-submit:before {
+        content: '';
+        position: absolute;
+        height: 8px;
+        width: 2px;
+        background: white;
+        transform: rotate(-35deg);
+        top: 19px;
+        left: 21px;
+    }
+   
+    #hbz-input {
+        height: 35px;
+        width: 82%;
+        padding: 0px;
+        padding-left: 4%;
+        border: none;
+        outline: none;
+        position: absolute;
+        right: 14%;
+        box-shadow: inset 0 2px 2px #080808;
+        background-color: #444444;
+        color: #fff;
+        border-top-left-radius: 5px;
+        border-bottom-left-radius: 5px;
+        transition: all 0.5s;
+    }
+   
+    #hbz-input:hover,
+    #hbz-input:focus {
+        box-shadow: inset 1px 1px 10px #000;
+    }
+
